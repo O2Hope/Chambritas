@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera pagina de Gonzzz</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        
+        <img class="logo" src="img/Chambritas-2.png" alt="logo">
+        <p class="title" >Chambritas Olissei</p>
+        <nav>
+
+            <a class="link-menu" href="#">Inicio</a>
+            <a class="link-menu" href="/servicios.html">Servicios</a>
+            <a class="link-menu" href="/contacto.html">Contacto</a>
+    
+        </nav>
+    </header>
+<div class="content">
+    <section class="subtitle-area">
+        <h2 class="subtitle">Diseño y patronaje</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#D64D83" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+        </svg>
+        <p>Ramos Arizpe, Coahuila</p>
+        <a href="#">Contactar</a>
+    </section>
+
+    <main class="box">
+        <h2>Servicios</h2>
+<div class="info">
+        <section class="card">
+
+            <h3>Amigurumis</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#D64D83" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+            </svg>
+            <p>Amigurumis personalizados, ponemos tus ideas en lana.</p>
+        </section>
+
+        <section class="card">
+
+            <h3>Chambritas</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shirt" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#D64D83" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 4l6 2v5h-3v8a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1v-8h-3v-5l6 -2a3 3 0 0 0 6 0" />
+            </svg>
+            <p>Chambritas tejidas a mano, todas las tallas.</p>
+        </section>
+
+        <section class="card">
+
+            <h3>Patronaje</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-measure" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D64D83" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M19.875 12c.621 0 1.125 .512 1.125 1.143v5.714c0 .631 -.504 1.143 -1.125 1.143h-15.875a1 1 0 0 1 -1 -1v-5.857c0 -.631 .504 -1.143 1.125 -1.143h15.75z" />
+                <path d="M9 12v2" />
+                <path d="M6 12v3" />
+                <path d="M12 12v3" />
+                <path d="M18 12v3" />
+                <path d="M15 12v2" />
+                <path d="M3 3v4" />
+                <path d="M3 5h18" />
+                <path d="M21 3v4" />
+            </svg>
+            <p>Patronaje de prendas de vestir para personas, mascotas y amigurumis.</p>
+        </section>
+    </div>
+    </main>
+
+    <section>
+
+
+        <h2>Contacto</h2>
+
+        <form action="/enviar.php" method="post">
+
+            <fieldset>
+
+
+                <legend>Envíanos un mensaje</legend>
+                <div class="form">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" placeholder="Telefono" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input type="email" placeholder="Mail" id="correo" name="correo" required>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <div>
+                        <button class="button" type="submit">Enviar</button>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+</div>
+    <footer>
+        <p>Todos los derechos reservados. Chambritas Olissei</p>
+    </footer>
+
+
+
+</body>
+
+</html>
