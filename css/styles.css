@@ -77,12 +77,29 @@ nav {
 
 }
 
-.subtitle-area{
+.hero {
     background-image: url(../img/top.jpg);
     background-size: cover;
     background-position: center;
-    padding: 16px;
+    height: 300px;
+    position: relative;
+}
 
+.hero-content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2, .hero-content p {
+    color: white;
+    text-align: center;
 }
 
 .subtitle {
@@ -155,7 +172,7 @@ textarea {
 }
 
 .button {
-    background-color: #EB86AD;
+    background-color: #A65173;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -168,15 +185,15 @@ textarea {
     border-radius: 10px;
 }
 
-.button:hover {
-    background-color: #EFBFD2;
-    color: #EB86AD;
+.button:hover:not(:disabled) {
+    background-color: #EB86AD;
+    color: #FEFAFB;
     transform: scale(1.1);
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.button:active {
+.button:active:not(:disabled) {
     transform: scale(0.9);
     transition: all 0.3s ease;
 }
@@ -184,4 +201,10 @@ textarea {
 .button:focus {
     outline: 1px solid #EB86AD;
     outline-offset: 1px;
+}
+
+.button:disabled {
+    background-color: #c4c4c4;
+    color: white;
+    cursor: not-allowed;
 }
