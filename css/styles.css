@@ -79,8 +79,8 @@ nav {
 
 }
 
-@media screen and (max-width: 970px){
-    .info > section:last-of-type{
+@media screen and (max-width: 970px) {
+    .info>section:last-of-type {
         grid-column: 1 / -1;
     }
 }
@@ -105,7 +105,8 @@ nav {
     justify-content: center;
 }
 
-.hero-content h2, .hero-content p {
+.hero-content h2,
+.hero-content p {
     color: white;
     text-align: center;
 }
@@ -130,6 +131,7 @@ body {
     flex-direction: column;
 }
 
+
 .box {
     background-color: #fef2f5;
     color: #000;
@@ -141,15 +143,33 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 40px;
-
-margin: auto;
-
-    /* grid-template-rows: 200px 800px; */
-
-    /* grid: 200px 800px / 300px 300px; */
-    
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h3 {
+    color: #A65173;
+    font-weight:600;
+}
+.card p {
+    line-height: 2;
+}
+
+.icon-menu {
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /* .info {
     color: #000;
@@ -173,7 +193,7 @@ margin: auto;
     margin: 0;
 } */
 
-.form-container{
+.form-container {
     margin: 0 auto;
     max-width: 600px;
 
@@ -190,7 +210,7 @@ margin: auto;
 }
 
 .form {
-width: 100%;
+    width: 100%;
 }
 
 .form-group {
@@ -266,13 +286,13 @@ width: 100%;
     color: #A65173;
 }
 
-.input-container input:required:valid + label {
+.input-container input:required:valid+label {
     top: -20px;
     font-size: 14px;
     color: #EB86AD;
 }
 
-.input-container input:focus + label {
+.input-container input:focus+label {
     top: -20px;
     font-size: 14px;
     color: #EB86AD;
@@ -289,7 +309,15 @@ width: 100%;
     transition: 0.5s ease;
 }
 
-.input-container input:focus ~ .border,
-.input-container input:valid ~ .border {
+.input-container input:focus~.border,
+.input-container input:valid~.border {
     transform: scaleX(1);
+}
+
+
+.footer {
+    background-color: #A65173;
+    color: white;
+    padding: 8px;
+    text-align: center;
 }
